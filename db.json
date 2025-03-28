@@ -1,0 +1,166 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "cover": "https://m.media-amazon.com/images/I/61R+Cpm+HxL._AC_UF894,1000_QL80_.jpg",
+        "description": "A psychological thriller about a woman who shoots her husband and then stops speaking.",
+        "genre": "Psychological Thriller",
+        "year": 2019,
+        "pages": 336,
+        "rating": 4.7,
+        "reviews": 12500,
+        "contentWarnings": ["Violence", "Mental health themes"],
+        "isAvailable": true,
+        "isFeatured": true,
+        "similarBooks": [3, 6]
+      },
+      {
+        "id": 2,
+        "title": "It Ends With Us",
+        "author": "Colleen Hoover",
+        "cover": "https://cdnattic.atticbooks.co.ke/img/U344316.jpg",
+        "description": "A heartbreaking love story that explores the complexities of relationships and domestic abuse.",
+        "genre": "Contemporary Romance",
+        "year": 2016,
+        "pages": 384,
+        "rating": 4.8,
+        "reviews": 89200,
+        "contentWarnings": ["Domestic abuse", "Emotional trauma"],
+        "isAvailable": true,
+        "isFeatured": true,
+        "similarBooks": [5]
+      },
+      {
+        "id": 3,
+        "title": "Gone Girl",
+        "author": "Gillian Flynn",
+        "cover": "https://m.media-amazon.com/images/I/71+khXHbe5L.jpg",
+        "description": "A dark psychological thriller about a woman's disappearance and the secrets that surface.",
+        "genre": "Psychological Thriller",
+        "year": 2012,
+        "pages": 432,
+        "rating": 4.6,
+        "reviews": 105000,
+        "contentWarnings": ["Violence", "Psychological manipulation"],
+        "isAvailable": true,
+        "isFeatured": true,
+        "similarBooks": [1, 6]
+      },
+      {
+        "id": 4,
+        "title": "The Burning Girls",
+        "author": "C.J. Tudor",
+        "cover": "https://m.media-amazon.com/images/I/81EwUCKO-nL._AC_UF894,1000_QL80_.jpg",
+        "description": "A chilling gothic horror novel about a vicar who moves to a remote village with dark secrets.",
+        "genre": "Gothic Horror",
+        "year": 2021,
+        "pages": 352,
+        "rating": 4.5,
+        "reviews": 8700,
+        "contentWarnings": ["Disturbing imagery", "Religious themes"],
+        "isAvailable": true,
+        "isFeatured": false,
+        "similarBooks": [9]
+      },
+      {
+        "id": 5,
+        "title": "The Sun Is Also a Star",
+        "author": "Nicola Yoon",
+        "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGHSO6mCNet5ZsRRTbftKQ6aUvg4HXJbkNw&s",
+        "description": "A romantic story about fate, science, and the power of love set in New York City.",
+        "genre": "Contemporary Romance",
+        "year": 2016,
+        "pages": 384,
+        "rating": 4.7,
+        "reviews": 45600,
+        "contentWarnings": ["Immigration themes"],
+        "isAvailable": true,
+        "isFeatured": true,
+        "similarBooks": [2]
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "username": "booklover42",
+        "name": "Alex Johnson",
+        "email": "alex.johnson@example.com",
+        "avatar": "https://randomuser.me/api/portraits/women/65.jpg",
+        "membership": "premium",
+        "joined": "2022-03-15",
+        "favorites": [1, 5],
+        "readingHistory": [
+          {
+            "bookId": 2,
+            "progress": 65,
+            "lastRead": "2023-05-18"
+          },
+          {
+            "bookId": 3,
+            "progress": 100,
+            "lastRead": "2023-04-02"
+          }
+        ],
+        "bookmarks": [
+          {
+            "bookId": 1,
+            "page": 142,
+            "note": "Interesting plot twist"
+          }
+        ]
+      }
+    ],
+    "genres": [
+      {
+        "id": 1,
+        "name": "Psychological Thriller",
+        "count": 245,
+        "popularity": 9.2,
+        "icon": "fas fa-brain"
+      },
+      {
+        "id": 2,
+        "name": "Contemporary Romance",
+        "count": 312,
+        "popularity": 8.7,
+        "icon": "fas fa-heart"
+      },
+      {
+        "id": 3,
+        "name": "Gothic Horror",
+        "count": 178,
+        "popularity": 7.5,
+        "icon": "fas fa-ghost"
+      }
+    ],
+    "newReleases": [
+      {
+        "id": 1,
+        "bookId": 1
+      },
+      {
+        "id": 2,
+        "bookId": 4
+      }
+    ],
+    "featuredBooks": [
+      {
+        "id": 1,
+        "bookId": 1
+      },
+      {
+        "id": 2,
+        "bookId": 2
+      },
+      {
+        "id": 3,
+        "bookId": 3
+      },
+      {
+        "id": 4,
+        "bookId": 5
+      }
+    ]
+  }

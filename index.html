@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The E-Library</title>
+    <link rel="stylesheet" href="./style.css">
+  </head> 
+  <body>
+    <header>
+        <h1>THE E-LIBRARY</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/020/402/234/small/library-book-reading-abstract-icon-or-emblem-vector.jpg" alt="E-Library Logo">
+            </header>
+
+                <nav class="main-nav">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-compass"></i> Discover</a></li>
+                        <li><a href="#"><i class="fas fa-book-open"></i> My Library</a></li>
+                        <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                        <li><a href="favorites.html" id="favorites-link"><i class="fas fa-heart"></i> Favorites</a></li>
+                        <!--<li><a href="favorites.html"><i class="fas fa-heart"></i> Favorites</a></li>-->
+                    </ul>
+                </nav>
+                
+               
+            
+        
+            <main class="main-content">
+                <header class="top-bar">
+                    <div class="search-container">
+                        <input type="text" placeholder="Search books, authors, genres...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="user-actions">
+                        <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                        <button class="settings-btn"><i class="fas fa-cog"></i></button>
+                    </div>
+                </header>
+        
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Recommended For You</h2>
+                        <div class="filter-controls">
+                            <select>
+                                <option>All Genres</option>
+                                <option>Fiction</option>
+                                <option>Horror</option>
+                                <option>Contemporary Romance</option>
+                                <option>Thriller</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="books-grid">
+                        <!-- Book cards would be loaded here -->
+                        <div class="book-card">
+                            <div class="book-cover">
+                                <img src="https://m.media-amazon.com/images/I/61R+Cpm+HxL._AC_UF894,1000_QL80_.jpg" alt="Book Cover">
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-title">The Silent Patient</h3>
+                                <p class="book-author">Alex Michaelides</p>
+                                <div class="book-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                                    <span class="genre">Thriller</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="books-grid">
+                            <div class="book-card" data-id="1">
+                                <div class="book-cover">
+                                    <img src="https://cdnattic.atticbooks.co.ke/img/U344316.jpg" alt="It Ends With Us Book Cover">
+                                    <div class="heart-icon">
+                                        <i class="fas fa-heart"></i> <!-- Favorite button -->
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">It Ends With Us</h3>
+                                    <p class="book-author">Colleen Hoover</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                                        <span class="genre">Contemporary Romance</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="books-grid">
+                            <div class="book-card dark-theme">
+                                <div class="book-cover">
+                                    <img src="https://m.media-amazon.com/images/I/71+khXHbe5L.jpg" alt="Gone Girl Book Cover">
+                                    <div class="mystery-badge">
+                                        <i class="fas fa-question-circle"></i> <!-- Mystery element -->
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">Gone Girl</h3>
+                                    <p class="book-author">Gillian Flynn</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                                        <span class="genre">Psychological Thriller</span>
+                                        <span class="content-warning"><i class="fas fa-exclamation-triangle"></i> Twists</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="books-grid">
+                            <div class="book-card horror-theme">
+                                <div class="book-cover">
+                                    <img src="https://m.media-amazon.com/images/I/81EwUCKO-nL._AC_UF894,1000_QL80_.jpg" alt="The Burning Girls Book Cover">
+                                    <div class="flame-icon">
+                                        <i class="fas fa-fire"></i> <!-- Supernatural element -->
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">The Burning Girls</h3>
+                                    <p class="book-author">C.J. Tudor</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                                        <span class="genre">Gothic Horror</span>
+                                        <span class="content-warning"><i class="fas fa-skull"></i> Disturbing</span>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="books-grid">
+                            <div class="book-card cosmic-theme">
+                                <div class="book-cover">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPGHSO6mCNet5ZsRRTbftKQ6aUvg4HXJbkNw&s" alt="The Sun Is Also a Star Book Cover">
+                                    <div class="cosmic-elements">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">The Sun Is Also a Star</h3>
+                                    <p class="book-author">Nicola Yoon</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                                        <span class="genre">Contemporary Romance</span>
+                                        <span class="setting"><i class="fas fa-map-marker-alt"></i> New York City</span>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="books-grid">
+                            <div class="book-card spa-horror-theme">
+                                <div class="book-cover">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1682065129i/123430981.jpg" alt="The Clinic Book Cover">
+                                    <div class="wellness-badge">
+                                        <i class="fas fa-spa"></i> <!-- Deceptive serenity -->
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">The Clinic</h3>
+                                    <p class="book-author">Cate Quinn</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.4</span>
+                                        <span class="genre">Psychological Thriller</span>
+                                        <span class="setting"><i class="fas fa-map-marker-alt"></i> Remote Retreat</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More book cards -->
+                    </div>
+                </section>
+        
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>New Releases</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    
+                    <div class="books-carousel">
+                        <div class="book-card">
+                            <div class="book-cover">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfFB_NJDz1WvR3IWtQdeI77XPiDX2oF8Tlow&s" alt="Book Cover">
+                                <div class="book-badge">New</div>
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-title">Project Hail M..</h3>
+                                <p class="book-author">Andy Weir</p>
+                                <div class="book-meta">
+                                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                                    <span class="genre">Sci-Fi</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="books-carousel">
+                            <div class="book-card thriller-theme">
+                                <div class="book-cover">
+                                    <img src="https://m.media-amazon.com/images/I/918pIMyE7vL.jpg" alt="Secluded Cabin Sleeps Six Book Cover">
+                                    <div class="thriller-overlay">
+                                        <i class="fas fa-tree"></i>
+                                        <i class="fas fa-snowflake"></i>
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">Secluded Cab..</h3>
+                                    <p class="book-author">Lisa Unger</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                                        <span class="genre">Psychological Thriller</span>
+                                        <span class="content-warning"><i class="fas fa-exclamation-triangle"></i> Tense</span>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="books-carousel">
+                            <div class="book-card gothic-theme">
+                                <div class="book-cover">
+                                    <img src="https://m.media-amazon.com/images/I/61RXa3zzTKL._AC_UF1000,1000_QL80_.jpg" alt="Hold My Place Book Cover">
+                                    <div class="haunting-elements">
+                                        <i class="fas fa-heart"></i>
+                                        <i class="fas fa-ghost"></i>
+                                    </div>
+                                </div>
+                                <div class="book-info">
+                                    <h3 class="book-title">Hold My Place</h3>
+                                    <p class="book-author">Cassondra Windwalker</p>
+                                    <div class="book-meta">
+                                        <span class="rating"><i class="fas fa-star"></i> 4.3</span>
+                                        <span class="genre">Gothic Horror</span>
+                                        <span class="content-warning"><i class="fas fa-skull"></i> Possessive</span>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More book cards -->
+                    </div>
+                </section>
+            </main>
+                
+        
+    <script src="index.js"></script>
+    <script src="js/favorites.js"></script> 
+    <script src="js/bookmarks.js"></script>
+    <script src="js/discover.js"></script>
+    <script src="js/library.js"></script><!-- Correct path -->
+  </body> 
+</html>

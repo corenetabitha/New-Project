@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library - The E-Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/library.css">
+</head>
+<body>
+    <header>
+        <h1>THE E-LIBRARY</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/020/402/234/small/library-book-reading-abstract-icon-or-emblem-vector.jpg" alt="E-Library Logo">
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="discover.html"><i class="fas fa-compass"></i> Discover</a></li>
+            <li class="active"><a href="library.html"><i class="fas fa-book-open"></i> My Library</a></li>
+            <li><a href="bookmarks.html"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+            <li><a href="favorites.html"><i class="fas fa-heart"></i> Favorites</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search my library...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                <button class="settings-btn"><i class="fas fa-cog"></i></button>
+            </div>
+        </header>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>My Collection</h2>
+                <div class="filter-controls">
+                    <select id="library-filter">
+                        <option value="all">All Books</option>
+                        <option value="reading">Currently Reading</option>
+                        <option value="finished">Finished</option>
+                        <option value="unread">Not Started</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="library-tabs">
+                <button class="tab-btn active" data-tab="books">Books</button>
+                <button class="tab-btn" data-tab="highlights">Highlights</button>
+                <button class="tab-btn" data-tab="notes">Notes</button>
+            </div>
+            
+            <div class="books-grid" id="library-grid">
+                <!-- Library books will be loaded here -->
+                <div class="empty-state">
+                    <i class="fas fa-book-open fa-3x"></i>
+                    <h3>Your Library is Empty</h3>
+                    <p>Add books to your library to get started</p>
+                    <a href="discover.html" class="btn">Discover Books</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/library.js"></script>
+</body>
+</html>

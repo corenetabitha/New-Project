@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookmarks - The E-Library</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/bookmarks.css">
+</head>
+<body>
+    <header>
+        <h1>THE E-LIBRARY</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/020/402/234/small/library-book-reading-abstract-icon-or-emblem-vector.jpg" alt="E-Library Logo">
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="discover.html"><i class="fas fa-compass"></i> Discover</a></li>
+            <li><a href="library.html"><i class="fas fa-book-open"></i> My Library</a></li>
+            <li class="active"><a href="bookmarks.html"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+            <li><a href="favorites.html"><i class="fas fa-heart"></i> Favorites</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search bookmarks...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                <button class="settings-btn"><i class="fas fa-cog"></i></button>
+            </div>
+        </header>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>My Bookmarks</h2>
+                <div class="filter-controls">
+                    <select>
+                        <option>All Books</option>
+                        <option>Currently Reading</option>
+                        <option>Finished</option>
+                        <option>By Genre</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="books-grid" id="bookmarks-grid">
+                <!-- Bookmarks will be loaded here -->
+                <div class="empty-state">
+                    <i class="fas fa-bookmark fa-3x"></i>
+                    <h3>No Bookmarks Yet</h3>
+                    <p>Save your progress by bookmarking books as you read</p>
+                    <a href="discover.html" class="btn">Discover Books</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/bookmarks.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Books - The E-Library</title>
+    <!-- Add Font Awesome first -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Then your custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/discover.css">
+</head>
+<body>
+    <header>
+        <h1>THE E-LIBRARY</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/020/402/234/small/library-book-reading-abstract-icon-or-emblem-vector.jpg" 
+                     alt="E-Library Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Corrected Navigation -->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li class="active"><a href="discover.html"><i class="fas fa-compass"></i> Discover</a></li>
+            <li><a href="library.html"><i class="fas fa-book-open"></i> My Library</a></li>
+            <li><a href="bookmarks.html"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+            <li><a href="favorites.html"><i class="fas fa-heart"></i> Favorites</a></li>
+        </ul>
+    </nav>
+    
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-container">
+                <input type="text" placeholder="Search books, authors, genres...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                <button class="settings-btn"><i class="fas fa-cog"></i></button>
+            </div>
+        </header>
+
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Browse All Books</h2>
+                <div class="filter-controls">
+                    <select id="genre-filter">
+                        <option value="all">All Genres</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-Fiction</option>
+                        <option value="romance">Romance</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="fantasy">Fantasy</option>
+                    </select>
+                    <select id="sort-by">
+                        <option value="popular">Sort by: Popular</option>
+                        <option value="newest">Newest First</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Single books-grid container -->
+            <div class="books-grid" id="discover-grid">
+                <!-- Books will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript at bottom of body -->
+    <script src="js/common.js"></script>
+    <script src="js/discover.js"></script>
+</body>
+</html>

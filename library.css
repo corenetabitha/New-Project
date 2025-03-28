@@ -1,0 +1,204 @@
+/* library.css - Standalone styles for Library page */
+
+/* ===== Base Layout ===== */
+.main-content {
+    padding: 2rem 0;
+  }
+  
+  .content-section {
+    margin-top: 1.5rem;
+  }
+  
+  /* ===== Filter Controls ===== */
+  .filter-controls {
+    margin: 1rem 0;
+  }
+  
+  .filter-controls select {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  /* ===== Library Tabs ===== */
+  .library-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin: 1.5rem 0;
+  }
+  
+  .tab-btn {
+    padding: 0.8rem 1.5rem;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-weight: 500;
+    color: #8d99ae;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-btn.active {
+    color: #4361ee;
+    border-bottom-color: #4361ee;
+  }
+  
+  .tab-btn:hover:not(.active) {
+    color: #2b2d42;
+  }
+  
+  /* ===== Book Grid ===== */
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .library-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .library-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book-cover {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .book-status {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .status-reading { background-color: #4361ee; }
+  .status-finished { background-color: #4cc9f0; }
+  .status-unread { background-color: #f72585; }
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff6b81;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .book-info {
+    padding: 1rem;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .book-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .book-author {
+    color: #8d99ae;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .book-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #8d99ae;
+    margin-top: auto;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    background: #eee;
+    margin-top: 0.5rem;
+    border-radius: 2px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: #4361ee;
+    border-radius: 2px;
+  }
+  
+  /* ===== Empty State ===== */
+  .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #8d99ae;
+  }
+  
+  .empty-state i {
+    font-size: 3rem;
+    color: #4361ee;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-state .btn {
+    display: inline-block;
+    background-color: #4361ee;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .empty-state .btn:hover {
+    background-color: #3a0ca3;
+  }
+  
+  /* ===== Responsive Adjustments ===== */
+  @media (max-width: 768px) {
+    .books-grid {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    
+    .book-cover {
+      height: 240px;
+    }
+    
+    .tab-btn {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+  }
